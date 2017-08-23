@@ -334,7 +334,21 @@ namespace Generadores
             var cantidadIntervalos = int.Parse(txt_IntC.Text);
             var alfa = double.Parse(txt_chicierto.Text);
 
-            _gestor = new GestorEstadistico(_distribucion, tamañoMuestra, cantidadIntervalos, alfa);
+            try
+            {
+                _gestor = new GestorEstadistico(_distribucion, tamañoMuestra, cantidadIntervalos, alfa);
+            }
+            catch (Exception)
+            {
+                var grados = int.Parse(txt_IntC.Text) - _distribucion.CantidadParametros() - 1;
+
+                MessageBox.Show(grados <= 0
+                    ? @"Grados de libertad insuficientes, utilice más intervalos"
+                    : @"Falla la prueba de Chi Cuadrado porque las frecuencias esperadas tienden a cero, utilice menos intervalos");
+
+                txt_mA.Focus();
+                return;
+            }
 
             for (var i = 0; i < tamañoMuestra; i++)
             {
