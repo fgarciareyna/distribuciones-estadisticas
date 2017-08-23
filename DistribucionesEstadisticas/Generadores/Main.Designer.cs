@@ -53,7 +53,7 @@
             this.btn_pro.Name = "btn_pro";
             this.btn_pro.Size = new System.Drawing.Size(159, 36);
             this.btn_pro.TabIndex = 1;
-            this.btn_pro.Text = " Trabajo Practico N°1";
+            this.btn_pro.Text = " Trabajo Práctico N°3";
             this.btn_pro.UseVisualStyleBackColor = true;
             this.btn_pro.Click += new System.EventHandler(this.btn_pro_Click);
             // 

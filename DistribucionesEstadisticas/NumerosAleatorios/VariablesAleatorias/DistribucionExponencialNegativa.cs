@@ -12,12 +12,18 @@ namespace NumerosAleatorios.VariablesAleatorias
 
         public DistribucionExponencialNegativa(double lambda)
         {
+            if (lambda <= 0)
+                throw new NotSupportedException("Lambda debe ser un número positivo");
+
             Lambda = lambda;
             Generador = new GeneradorDelSistema();
         }
 
         public DistribucionExponencialNegativa(double lambda, IGeneradorNumerosAleatorios generador)
         {
+            if (lambda <= 0)
+                throw new NotSupportedException("Lambda debe ser un número positivo");
+
             Lambda = lambda;
             Generador = generador;
         }

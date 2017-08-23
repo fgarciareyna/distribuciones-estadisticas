@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NumerosAleatorios.NumerosAleatorios;
 
 namespace NumerosAleatorios.VariablesAleatorias
@@ -11,6 +12,9 @@ namespace NumerosAleatorios.VariablesAleatorias
 
         public DistribucionUniforme(double a, double b)
         {
+            if (b <= a)
+                throw new NotSupportedException("A debe ser menor que B");
+
             A = a;
             B = b;
             Generador = new GeneradorDelSistema();
@@ -18,6 +22,9 @@ namespace NumerosAleatorios.VariablesAleatorias
 
         public DistribucionUniforme(double a, double b, IGeneradorNumerosAleatorios generador)
         {
+            if (b <= a)
+                throw new NotSupportedException("A debe ser menor que B");
+
             A = a;
             B = b;
             Generador = generador;
