@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend16 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.posicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -175,7 +175,7 @@
             this.txt_IntC.Margin = new System.Windows.Forms.Padding(2);
             this.txt_IntC.Name = "txt_IntC";
             this.txt_IntC.Size = new System.Drawing.Size(76, 19);
-            this.txt_IntC.TabIndex = 2;
+            this.txt_IntC.TabIndex = 12;
             // 
             // txt_cant_nroC
             // 
@@ -183,7 +183,7 @@
             this.txt_cant_nroC.Margin = new System.Windows.Forms.Padding(2);
             this.txt_cant_nroC.Name = "txt_cant_nroC";
             this.txt_cant_nroC.Size = new System.Drawing.Size(76, 19);
-            this.txt_cant_nroC.TabIndex = 1;
+            this.txt_cant_nroC.TabIndex = 11;
             // 
             // label14
             // 
@@ -544,35 +544,35 @@
             // 
             // histogramaGenerado
             // 
-            chartArea16.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Lines;
-            chartArea16.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea16.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea16.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea16.AxisX.Title = "Intervalos";
-            chartArea16.AxisX.TitleAlignment = System.Drawing.StringAlignment.Far;
-            chartArea16.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Lines;
-            chartArea16.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
-            chartArea16.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
-            chartArea16.AxisY.Maximum = 100D;
-            chartArea16.AxisY.Minimum = 0D;
-            chartArea16.AxisY.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea16.AxisY.Title = "Frecuencia";
-            chartArea16.AxisY.TitleAlignment = System.Drawing.StringAlignment.Far;
-            chartArea16.Name = "ChartArea1";
-            this.histogramaGenerado.ChartAreas.Add(chartArea16);
-            legend16.Enabled = false;
-            legend16.Name = "Legend1";
-            this.histogramaGenerado.Legends.Add(legend16);
+            chartArea1.AxisX.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Lines;
+            chartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisX.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisX.Title = "Intervalos";
+            chartArea1.AxisX.TitleAlignment = System.Drawing.StringAlignment.Far;
+            chartArea1.AxisY.ArrowStyle = System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Lines;
+            chartArea1.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.Maximum = 100D;
+            chartArea1.AxisY.Minimum = 0D;
+            chartArea1.AxisY.ScaleView.SizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.Title = "Frecuencia";
+            chartArea1.AxisY.TitleAlignment = System.Drawing.StringAlignment.Far;
+            chartArea1.Name = "ChartArea1";
+            this.histogramaGenerado.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.histogramaGenerado.Legends.Add(legend1);
             this.histogramaGenerado.Location = new System.Drawing.Point(14, 29);
             this.histogramaGenerado.Name = "histogramaGenerado";
             this.histogramaGenerado.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series16.ChartArea = "ChartArea1";
-            series16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            series16.IsValueShownAsLabel = true;
-            series16.IsXValueIndexed = true;
-            series16.Legend = "Legend1";
-            series16.Name = "Series1";
-            this.histogramaGenerado.Series.Add(series16);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            series1.IsValueShownAsLabel = true;
+            series1.IsXValueIndexed = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.histogramaGenerado.Series.Add(series1);
             this.histogramaGenerado.Size = new System.Drawing.Size(1279, 311);
             this.histogramaGenerado.TabIndex = 36;
             this.histogramaGenerado.Text = "chart1";
