@@ -38,7 +38,7 @@ namespace NumerosAleatorios.VariablesAleatorias
             //x=-1/lambda*ln(1-r1)
             var aleatorio = Generador.Generar();
 
-            var variable = -1 / (Lambda * Math.Log(1 - aleatorio));
+            var variable = (-1 / Lambda) * Math.Log(1 - aleatorio);
 
             return variable;
         }
